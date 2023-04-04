@@ -33,10 +33,6 @@ let package = Package(
             name: "MiniGit",
             dependencies: ["XGit"],
             linkerSettings: [.linkedLibrary("z"), .linkedLibrary("iconv")]),
-        .binaryTarget(
-            name: "libgit2",
-            url: "https://github.com/light-tech/LibGit2-On-iOS/releases/download/v1.3.1/libgit2.xcframework.zip",
-            checksum: "332bfb255649f2295d5530e4abed4e81803acdc6abf18a266695fdb447ca3df2"),
         .testTarget(
             name: "MiniGitTests",
             dependencies: ["MiniGit"]),
